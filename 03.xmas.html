@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년 안녕~</title>
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+    <meta property="og:image"
+        content="https://eatris.eu/wp-content/uploads/2019/06/EJP-RD-banner-1-800x400.png">
+    <meta property="og:title" content="한승이의 카드">
+    <meta property="og:description" content="2021년을 기대하며">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope_msg {
+            text-align: center;
+            color: white;
+        }
+
+        .letter_close {
+            display: block;
+        }
+
+        .letter_open {
+            display: none;
+        }
+
+        .msg_image {
+            background-color: steelblue;
+
+            width: 200px;
+            height: 200px;
+
+            margin: 150px auto 0px auto;
+
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif);
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 150px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msg_box {
+            background-color: ivory;
+
+            width: 210px;
+            margin: auto;
+
+            color: brown;
+            font-size: 20px;
+            line-height: 27px;
+
+            padding: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+
+            .msg_box {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .msg_image {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter_close")[0].style.display = 'none'
+            document.getElementsByClassName("letter_open")[0].style.display = 'block'
+        }
+
+        function go_image() {
+            alert('히든 메세지!');
+            window.location.href = 'https://www.naver.com/';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter_close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope_msg">봉투를 열어보세요!</h2>
+    </div>
+
+    <div class="letter_open">
+        <div class="msg_image" onclick="go_image()"></div>
+        <h1>2020년 수고했어요!</h1>
+        <div class="msg_box">
+            이번 2020년 한해. <br />
+            코로나로 말도 탈도 많았지만 <br />
+            내년에는 좋은 소식 있겠죠! <br />
+            2021년도 아자아자!!<br />
+            화이팅!!<br /><br />
+
+            <p class="from">2020.12.27 한승이가.</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
